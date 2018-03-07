@@ -1,0 +1,11 @@
+version: '2'
+services:
+    madrasatimicroservice-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/MadrasatiMicroservice/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=MadrasatiMicroservice
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
